@@ -1,0 +1,13 @@
+# Mac
+.DS_Store
+*.DS_Store
+
+#IntelliJ Idea related files
+.idea/
+*.iml
+
+# Eclipse related stuff
+workspace/
+
+# Java
+*.class

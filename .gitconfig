@@ -1,0 +1,67 @@
+[user]
+	name = Hardik Rakholiya
+	email = hmrakholiya@gmail.com
+
+[gc]
+	autoDetach = false
+
+[core]
+	autocrlf = input
+	commentchar = auto
+	excludesfile = ~/.gitignore
+	editor = subl --wait -a
+	# editor = atom --wait -a
+
+[alias]
+	# branch
+	br = branch
+	co = checkout
+	cob = checkout -b
+
+	# status
+	s = status
+	ss = status -s
+
+	#stage
+	a = add .
+	ap = add --patch
+	added = diff --staged --name-only
+	
+	# commit
+	c = commit -v
+	cm = commit -m
+	amend = commit --amend -v
+	amendm = commit --amend -m
+	
+	# reset
+	r = reset
+	unstage = reset HEAD --
+
+	cp = cherry-pick
+	
+	# remote
+	f = fetch
+	
+	# diff
+	diffs = diff --staged
+	difft = difftool
+	diffts = difftool --staged
+
+	# configs
+	editconfig = !subl -a ~/.gitconfig
+	editignore = !subl -a ~/.gitignore
+
+	# logs
+	l =   log --color --graph --pretty=format:'%Cgreen%h%Creset -%C(red bold)%d%Creset %s %C(cyan)[%an %cr]%Creset' --all
+	last = log --color -p  -1  --pretty=format:'%Cgreen%h%Creset -%C(red bold)%d%Creset %s %C(cyan)[%an %cr]%Creset'
+
+[commit]
+	template = ~/.gitmessage
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
